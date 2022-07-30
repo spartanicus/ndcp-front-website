@@ -1,7 +1,7 @@
 {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
 
 <ol class="breadcrumb">
-  <li><a href="/">Home</a></li>
+  <li><a href="{{ site.basepath }}/">Home</a></li>
   {% for crumb in crumbs offset: 1 %}
     {% if forloop.last %}
       {% if page.menuTitle == "" %}
@@ -11,7 +11,7 @@
       {% endif %}
     {% else %}
       <li>
-        <a href="{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">
+        <a href="{{ site.basepath }}{% assign crumb_limit = forloop.index | plus: 1 %}{% for crumb in crumbs limit: crumb_limit %}{{ crumb | append: '/' }}{% endfor %}">
           {{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}
         </a>
       </li>
