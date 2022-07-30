@@ -1,0 +1,42 @@
+menu:
+  - menuTitle: Home
+    url: "/"
+  - menuTitle: Our Services
+    url: "#DROPDOWN#"
+    id: nav-services
+    submenuItems:
+      - menuTitle: Our Services
+        url: "/services/"
+      - menuTitle: Service One
+        url: "/services/serv1"
+      - menuTitle: Service Two
+        url: "/services/serv2"
+  - menuTitle: Documentation and Guides
+    url: "#DROPDOWN#"
+    id: nav-docs
+    submenuItems:
+      - menuTitle: Documentation
+        menuAlias: Documentation and Guides
+        url: "/documentation/"
+      - menuTitle: Guides
+        url: "/documentation/guides"
+  - menuTitle: About
+    url: "#DROPDOWN#"
+    id: nav-about
+    submenuItems:
+      - menuTitle: About NDCP
+        menuAlias: About
+        url: "/about/"
+      - menuTitle: Our Staff
+        menuAlias: Staff
+        url: "/about/staff"
+      - menuTitle: Timeline
+        url: "/about/timeline"
+      - menuTitle: History
+        url: "/about/history"
+      - menuTitle: Publications
+        url: "/about/publications"
+  - menuTitle: News
+    url: "/news/"
+  - menuTitle: Contact
+    url: "/contact/"

@@ -1,0 +1,24 @@
+<nav role="navigation" aria-labelledby="ndcp-org-links-title" id="ndcp-org-links">
+  <h2 class="visually-hidden" id="ndcp-org-links-title">NDCP Organizations Menu</h2>
+  <ul>
+    <li>
+      <a href="http://www.hhs.gov/" title="U.S. Department of Health &amp; Human Services">U.S. Department of Health &amp; Human Services</a>
+    </li>
+    <li>
+      <a href="http://www.nih.gov/" title="National Institutes of Health">National Institutes of Health</a>
+    </li>
+    <li>
+      <a href="http://www.niaid.nih.gov/" title="National Institute of Allergy &amp; Infectious Diseases">National Institute of Allergy &amp; Infectious Diseases</a>
+    </li>
+  </ul>
+</nav>
+<div id="banner">
+  <a href="{{ "/" | absolute_url }}">
+    {% if site.logo %}
+      <img src="{{site.logo | relative_url}}" class="site-logo" alt="NIAID Logo" />
+    {% endif %}
+    <span id="site-title">
+      {{ site.title }}
+    </span>  
+  </a>
+</div>

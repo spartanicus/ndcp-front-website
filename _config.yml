@@ -1,0 +1,23 @@
+# Basics
+title: "NIAID Discovery and Collaboration Platform"
+description: 
+logo: assets/img/logo.png
+
+# Syntax highlighting
+highlighter:         rouge
+
+# Permalinks
+permalink:           pretty
+# Use of `relative_permalinks` ensures post links from the index work properly.
+#relative_permalinks: true
+
+# Build Settings
+sass:
+  sass_dir: _sass
+  style: :compressed
+include: ['_pages']
+kramdown:
+  input: GFM
+
+# Exclude from build
+exclude: [ndcp-front-website.iml, Gemfile, Gemfile.lock, README.md]

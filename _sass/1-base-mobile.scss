@@ -1,0 +1,230 @@
+/* BODY, FONTS, and HEADINGS */
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&family=Roboto&display=swap');
+html, body {
+  line-height: 2;
+  font-size: 16px;
+  font-family: "Public Sans","Roboto",sans-serif;
+  color: #404B56;
+  background-color: #f5f6fa;
+  -webkit-text-size-adjust: 100%;
+}
+/* HEADER AND LOGOS */
+header {
+	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 3px 1px -2px rgba(0,0,0,0.12);
+	position: relative;
+	z-index: 4;
+}
+#header-container {
+  padding: 0;
+}
+h1,h2,h3 {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+h4,h5,h6 {
+  font-weight: 400;
+  margin-bottom: 0.5em;
+}
+h1 {
+  padding-top: 0;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: calc(1.425rem + 2.1vw);
+  letter-spacing: -0.05rem;
+}	
+a {
+  color: #246CD3;
+}
+/* Uppermost Organizational Links */
+#ndcp-org-links {
+  width: 100%;
+  margin: 0;
+  padding: 0.25rem;
+  background-color: #f6f8fa;
+  font-size: 0.8em;
+  text-align: center;
+}
+#ndcp-org-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  column-gap: 1.5rem;
+  list-style: none;
+  justify-content: center;
+  line-height: 1.4;
+}
+#ndcp-org-links a {
+  color: #044289;
+  text-decoration: none;
+}
+#ndcp-org-links a:hover {
+  text-decoration: underline;
+}
+/* Banner */
+#banner {
+  padding: 1.5rem;
+  background-color: #fdfdfd;
+}
+#banner a {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  color: #404B56;
+  text-decoration: none;
+}
+.site-logo {
+  max-height: 56px;
+  min-width: unset;
+}  
+#site-title {
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+/* NAVIGATION MENU */
+nav.navbar {
+	border-bottom-color: transparent;
+	padding: 0;
+	margin: 0;
+}
+button.navbar-toggler {
+	border: none;
+	width: 100%;
+	font-size: 1rem;
+	padding: 1.1rem;
+	background-color: #205489;
+	color: white;
+	border-radius: 0;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 3px 1px -2px rgba(0,0,0,0.12);
+  transition: box-shadow .25s;
+  -webkit-transition: box-shadow .25s;
+  -moz-transition: box-shadow .25s;
+  z-index: 2;
+}
+button.navbar-toggler.collapsed {
+  background-color: white;
+	color: #044289;
+}
+button.navbar-toggler:focus {
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 3px 1px -2px rgba(0,0,0,0.12);
+	background-color: #205489;
+	color: white;
+}
+#nav-container {
+	background-color: #fdfdfd;
+	padding: 2rem 2rem 1.5rem 2rem;
+	border-bottom: .0625rem solid #d4d4d4;
+	box-shadow: inset 0 0 20px #eee;
+}
+#nav-container a {
+  color: #246CD3;
+}
+.navbar-nav .dropdown-menu {
+	border-radius: 0;
+	background-color: unset;
+	border-top: none;
+	border-left: .25rem solid #205489;
+	border-bottom: none;
+	border-right: none;
+}
+nav.submenu {
+  display: none;
+}
+/* CONTENT LAYOUT */
+#main-container {
+	padding: 2rem 3rem 3rem;
+	background-color: #fdfdfd;
+}
+/* BREADCRUMBS */
+.breadcrumb {
+  margin: -1em 0 0 0;
+  padding: 0.5em 0;
+  background-color: transparent;
+  font-size: 0.9em;
+  list-style: none;
+}
+.breadcrumb > li {
+  display: inline-block;
+  padding-right: 2px;
+}
+.breadcrumb > li + li::before {
+  content: "›";
+  padding: 0 5px;
+}
+/* GENERAL */
+img {
+  max-width: 100%;
+  min-width: 100%;
+}
+.commonTable td {
+  padding: 0 1em 1em 0;
+}
+.top-right-buttons {
+  float: right;
+  margin-top: -3em;
+}
+.btn-primary {
+  background-color: #246CD3;
+  border-color: #246CD3;
+}
+figcaption {
+  font-size: 0.9em;
+  font-style: italic;
+  margin-top: 0.5em;
+  color: #666;
+}
+/* NEWS */
+#news {
+  padding: 0;
+}
+#news li {
+  list-style: none;
+  margin: 0 0 1.5em;
+}
+#news h3 {
+  display: inline;
+  margin-bottom: 0;
+}
+.news-list-title {
+	font-size: 1.4rem;
+	margin-right: 0.5rem;
+}
+#news .news-summary {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+/* FOOTER */
+footer {
+  background-color: #414141;
+  color: white;
+  border-top: .25rem solid #79A9D1;
+}
+footer a {
+  color: white;
+}
+footer a:hover {
+  text-decoration: none;
+  color: white;
+}
+.global--footer__content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.global--footer__content__column h4 a {
+  text-decoration: none;
+}
+.global--footer__content__column h4 a:hover {
+  text-decoration: underline;
+}
+.global--footer__content__column h4 a::after {
+  color: white;
+  content: "›";
+  font-size: 1.7rem;
+  padding-left: .5rem;
+}
+.ext-link-icon::after {
+	content: "\f35d" !important;
+	font-size: .75rem;
+	margin-left: .25rem;
+}
