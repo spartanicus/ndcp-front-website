@@ -9,7 +9,7 @@ permalink: /news/
 <ul id="news">
   {% for post in site.posts %}
   <li>
-    <a href="{{ site.basepath }}{{ post.url | prepend: site.baseurl }}" class="news-list-title">{{ post.title }}</a>
+    <a href="{{ post.url | prepend: site.baseurl }}" class="news-list-title">{{ post.title }}</a>
     <time>{{ post.date | date: "%b %-d, %Y" }}</time>
     <div class="news-summary">{{ post.summary }}</div>
   </li>

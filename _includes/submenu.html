@@ -10,7 +10,7 @@
               </li>
             {% else %}
               <li>
-                <a href="{{ site.basepath }}{{ entry.url }}">
+                <a href="{{ entry.url | prepend: site.baseurl }}">
                   {{ entry.menuTitle }}
                 </a>
               </li>

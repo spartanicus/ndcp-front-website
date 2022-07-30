@@ -3,9 +3,6 @@ title: "NIAID Discovery and Collaboration Platform"
 description: 
 logo: assets/img/logo.png
 
-# Set the basepath to empty string if deployment moves to a root context
-basepath: /ndcp-front-website
-
 # Syntax highlighting
 highlighter:         rouge
 
