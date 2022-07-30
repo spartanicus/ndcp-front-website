@@ -1,7 +1,7 @@
 {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
 
 <ol class="breadcrumb">
-  <li><a href="{{ site.basepath }}/">Home</a></li>
+  <li><a href="{{ "/" | absolute_url }}">Home</a></li>
   {% for crumb in crumbs offset: 1 %}
     {% if forloop.last %}
       {% if page.menuTitle == "" %}
