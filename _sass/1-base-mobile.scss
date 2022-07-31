@@ -130,6 +130,23 @@ button.navbar-toggler:focus {
 nav.submenu {
   display: none;
 }
+/* HERO */
+body.with-hero #nav-container {
+  border-bottom: none;
+}
+#hero {
+  max-height: 190px;
+  overflow: hidden;
+  position: relative;
+}
+#hero .photo-credit {
+	position: absolute;
+	top: 0.5rem;
+	right: 0.5rem;
+	color: #eee;
+	font-size: 0.7rem;
+	text-shadow: 1px 1px 2px black;
+}
 /* CONTENT LAYOUT */
 #main-container {
 	padding: 2rem 3rem 3rem;

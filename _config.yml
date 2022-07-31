@@ -3,6 +3,12 @@ title: "NIAID Discovery and Collaboration Platform"
 description: 
 logo: assets/img/logo.png
 
+# Hero image. Leave empty for no hero.
+hero:
+  img: assets/img/hero-01.jpg
+  alt: "malaria parasite"
+  credit: "Photo credit: NIAID"
+
 # Syntax highlighting
 highlighter:         rouge
 

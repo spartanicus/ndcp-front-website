@@ -9,9 +9,22 @@
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap.min.css" integrity="sha512-XWTTruHZEYJsxV3W/lSXG1n3Q39YIWOstqvmFsdNEEQfHoZ6vm6E9GK2OrF6DSJSpIbRbi+Nn0WDPID9O7xB2Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+  {% if site.hero.img %}
+  <style>
+    :root {
+      --ndcp-hero-image: url("{{site.hero.img | relative_url}}");
+    }
+  </style>
+  {% endif %}
 </head>
-<body>
-  <a href="#main-content" class="visually-hidden focusable skip-link">
+
+{% assign bodyclasses = 'without-hero' %}
+{% if site.hero.img %}
+{% assign bodyclasses = 'with-hero' %}
+{% endif %}
+
+<body class="{{ bodyclasses }}">
+  <a href="#main-container" class="visually-hidden focusable skip-link">
     Skip to main content
   </a>
   <header>
@@ -21,6 +34,13 @@
   </header>
 
   {% include menuTop.html %}
+
+  {% if site.hero.img %}
+    <div id="hero">
+      <img src="{{site.hero.img | relative_url}}" class="site-hero" alt="{{ site.hero.alt }}" />
+      {% if site.hero.credit %}<div class="photo-credit">{{ site.hero.credit }}</div>{% endif %}
+    </div>
+  {% endif %}
 
   <main>
     <div id="main-container" class="container-fluid">
