@@ -230,16 +230,16 @@ footer a:hover {
   margin: 0 auto;
   padding: 2rem;
 }
-.global--footer__content__column h3 {
+.global--footer__content__column h2 {
   font-size: 1.5rem;
 }
-.global--footer__content__column h3 a {
+.global--footer__content__column h2 a {
   text-decoration: none;
 }
-.global--footer__content__column h3 a:hover {
+.global--footer__content__column h2 a:hover {
   text-decoration: underline;
 }
-.global--footer__content__column h3 a::after {
+.global--footer__content__column h2 a::after {
   color: white;
   content: "›";
   font-size: 1.7rem;
