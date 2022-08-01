@@ -44,6 +44,7 @@ a {
   background-color: #f6f8fa;
   font-size: 0.8em;
   text-align: center;
+  border-bottom: 1px solid #eee;
 }
 #ndcp-org-links ul {
   margin: 0;
@@ -229,13 +230,16 @@ footer a:hover {
   margin: 0 auto;
   padding: 2rem;
 }
-.global--footer__content__column h4 a {
+.global--footer__content__column h3 {
+  font-size: 1.5rem;
+}
+.global--footer__content__column h3 a {
   text-decoration: none;
 }
-.global--footer__content__column h4 a:hover {
+.global--footer__content__column h3 a:hover {
   text-decoration: underline;
 }
-.global--footer__content__column h4 a::after {
+.global--footer__content__column h3 a::after {
   color: white;
   content: "›";
   font-size: 1.7rem;
